@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codare Todo-list</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+<body>
+  
+  <div id="todo-app">
+
+    <header>
+      <img src="./assets/logo.svg" alt="logo da codare">
+    </header>
+
+    <h1 class="todo-title">Todo App</h1>
+
+    <section class="todo-input-section">
+      <input type="text" id="todo-input">
+      <button id="add-todo-button" class="orange-background" onclick="handleAddItem()">
+        <img src="./assets/plus.svg" alt="botão de adicionar">
+      </button>
+    </section>
+
+    <section class="todo-list-section">
+      <p id="todo-counter-text">Você tem X tarefas pendentes</p>
+      <ul id="todo-list"></ul>
+      <p id="todo-list-clear-all-text" onclick="handleClearAll()">Limpar tudo</p>
+    </section>
+
+    <script src="./js/index.js"></script>
+  </div>
+</body>
+</html>
